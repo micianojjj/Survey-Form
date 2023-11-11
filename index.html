@@ -1,0 +1,57 @@
+<DOCTYPE html>
+    <html>
+      <head lang="en">
+        <title>Survey Form</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
+      </head>
+      <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+  
+        <form id="survey-form">
+          <fieldset>
+          <label id="name-label">Name<input placeholder="Enter your name" id="name" type="text" required/></label>
+          <label id="email-label">Email<input placeholder="Enter your Email" id="email" type="email" required/></label>
+          <label id="number-label">Mobile Number <input placeholder="Enter your number" id="number" type="number" required min="00000000000" max="99999999999"/></label>
+  
+          </fieldset>
+          <fieldset>
+          <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option> Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>          
+          </select>
+          </label>
+          </fieldset>
+          <fieldset>
+          <label class="recommend">Would you recommend freeCodeCamp to a friend?
+           <label class="radio"> <br> <input  class="radio"  value="0" type="radio" name="reco"/>Definitely</label>
+            <label> <input  class="radio" value="1" type="radio" name="reco"/>Maybe </label>
+            <label><input  class="radio" value="2" type="radio" name="reco"/>Sure</label>
+          </label>
+          </fieldset>
+          <fieldset>
+          <label class="check">
+            What would you like to see improved? (Check all that apply) <br>
+          <label><input class="check" value="1" type="checkbox"/>Front-end Projects</label>
+          <label><input class="check" value="2"  type="checkbox"/>Back-end Projects</label>
+          <label><input class="check" value="3"  type="checkbox"/>Data Visualization</label>
+          <label><input class="check" value="4"  type="checkbox"/>Challenges</label>
+          <label><input class="check" value="5" type="checkbox"/>Open Source Community</label>
+          <label><input class="check" value="6"  type="checkbox"/>Gitter help rooms</label>
+          <label><input class="check" value="7"  type="checkbox"/>Forum</label>
+          <label><input class="check" value="8"  type="checkbox"/>Additional Courses</label>
+          </label>
+         </fieldset>
+           <label>Any comments or suggestions?<textarea id="coms" name"coms" rows="5" cols="30"></textarea></label>
+  <input id="submit" class="submit" type="submit" value="Submit" />
+  
+     </form>
+     </body>
+    </html>
